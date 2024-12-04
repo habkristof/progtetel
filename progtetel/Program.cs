@@ -12,7 +12,7 @@ namespace progtetel
             int[] paros_szamok = new int[100];
             int db = 0;
             int i;
-            for (i = 0; 1 <= x.Length; i++)
+            for (i = 0; i < x.Length; i++)
             {
                 if (x[i] % 2 == 0)
                 {
@@ -20,13 +20,15 @@ namespace progtetel
                     db++;
                 }
             }
+            Console.WriteLine("Maximum kiválasztás:");
             for (i = 0; i < db; i++)
             {
-                Console.WriteLine(paros_szamok[i] + " ");
+                Console.WriteLine(paros_szamok[i]);
             }
 
+
+       
             // Maximum kiválasztás - 2
-            int i;
             int n = x.Length;
 
             int maxi = 0;
@@ -37,6 +39,8 @@ namespace progtetel
                     maxi = i;
                 }
             }
+
+            Console.WriteLine("Legnagyobb számok:");
             Console.WriteLine($"{maxi + 1}. , {x[maxi]}");
 
 
