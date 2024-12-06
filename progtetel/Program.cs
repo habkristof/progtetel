@@ -40,8 +40,7 @@ namespace progtetel
                 }
             }
 
-            Console.WriteLine("Legnagyobb számok:");
-            Console.WriteLine($"{maxi + 1}. , {x[maxi]}");
+            Console.WriteLine($"Legnagyobb számok: {maxi + 1}. helyen, {x[maxi]}");
 
 
             Console.ReadKey();
